@@ -9,7 +9,7 @@ import { redirect } from "next/navigation";
 const Home = async () => {
   const clrekUser = await currentUser();
   if (!clrekUser) {
-    redirect("/");
+    redirect("/sign-in");
   }
   const documents = [];
 
