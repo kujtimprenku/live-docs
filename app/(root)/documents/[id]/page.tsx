@@ -1,11 +1,7 @@
 import CollaborativeRoom from "@/components/CollaborativeRoom";
 
 const Document = () => {
-  return (
-    <div>
-      <CollaborativeRoom />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Document;
