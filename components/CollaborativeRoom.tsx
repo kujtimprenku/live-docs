@@ -9,6 +9,7 @@ import { Editor } from "@/components/editor/Editor";
 import ActiveCollaborators from "./ActiveCollaborators";
 import { Input } from "./ui/input";
 import { updateDocument } from "@/lib/actions/room.actions";
+import Loader from "./Loader";
 
 const CollaborativeRoom = ({
   roomId,
@@ -71,7 +72,7 @@ const CollaborativeRoom = ({
 
   return (
     <RoomProvider id={roomId}>
-      <ClientSideSuspense fallback={<div>Loading…</div>}>
+      <ClientSideSuspense fallback={<Loader />}>
         <div className="collaborative-room">
           <Header>
             <div
