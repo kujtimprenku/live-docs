@@ -114,7 +114,7 @@ export const Cards = () => {
               className="w-10 text-[10px] uppercase leading-3"
               data-atropos-offset="5"
             >
-              Issue Date
+              Issue Date.g
             </p>
             <p data-atropos-offset="5">DD/MM/YYYY</p>
           </div>
