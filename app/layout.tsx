@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import Provider from "@/app/Provider";
+import "@theogu/aa-design-system/style.css";
 
 const fontSans = FontSans({
   subsets: ["latin"],

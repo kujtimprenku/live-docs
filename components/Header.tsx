@@ -1,11 +1,16 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { Cards } from "@/components/cards";
 
 const Header = ({ children, className }: HeaderProps) => {
   return (
     <div className={cn("header", className)}>
+      <div className="relative">
+        <Cards />
+      </div>
       <Link href="/" className="md:flex-1">
         <Image
           src="/assets/icons/logo.svg"
